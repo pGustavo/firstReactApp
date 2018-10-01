@@ -12,11 +12,13 @@
     "@env": "./environment"
   },
   "dependencies": {
+    "bootstrap": "^4.1.3",
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
   },
   "devDependencies": {
     "cross-env": "^5.2.0",
-    "parcel-bundler": "^1.10.1"
+    "parcel-bundler": "^1.10.1",
+    "sass": "^1.14.1"
   }
 }

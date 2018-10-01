@@ -6,8 +6,10 @@ import env from '@env';
 export default () => {
     console.log('env', env);
     return (
-        <div>
-            <h1>Hello, world!</h1>
+        <div className="container">
+            <div className="col-12">
+                <h1 className="text-center">I should be centered!</h1>
+            </div>
         </div>
     )
 };
