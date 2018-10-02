@@ -11,7 +11,7 @@ import loadable from 'loadable-components';
 
 const About = loadable(() => import ('./about'));
 const Home = loadable(() => import  ('./home'));
-const TodoApp = loadable(() => import ('./TodoApp/TodoApp.component'));
+const TodoApp = loadable(() => import ('./TodoApp'));
 
 const App = () => {
     console.log('env', env);

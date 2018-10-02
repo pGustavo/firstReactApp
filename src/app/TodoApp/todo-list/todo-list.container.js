@@ -1,4 +1,5 @@
 import { connect } from 'react-redux';
+
 import { actions } from '@state';
 
 const mapStateToProps = (state, ownProps) => ({
@@ -6,7 +7,6 @@ const mapStateToProps = (state, ownProps) => ({
 });
 
 const mapDispatchToProps = {
-    addTodo: actions.todoListActions.AddTodo,
     toggleTodo: actions.todoListActions.ToggleTodo
 };
 
