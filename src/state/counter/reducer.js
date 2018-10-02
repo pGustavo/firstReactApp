@@ -13,6 +13,12 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 counter: state.counter - 1
             };
+            
+        case '[COUNTER] LoadSucceeded':
+            return {
+                ...state,
+                counter: action.value.counter
+            };
 
         default:
             return state;

@@ -20,13 +20,13 @@ class TodoAdder extends Component {
 
     render() {
         return (
-            <div>
+            <div className="input-group">
                 <input
                     type="text"
                     value={this.state.newTodo}
                     onChange={this.handleNewToDoChange}
                 />
-                <button onClick={this.addTodo}>Add ToDo</button>
+                <button onClick={this.addTodo} className="btn btn-primary">Add ToDo</button>
             </div>
         )
     }

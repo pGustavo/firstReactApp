@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import TodoAdder from './todo-adder'; 
-import TodoList from './todo-list';
+import TodoAdder from './shared/todo-adder'; 
+import TodoList from './shared/todo-list';
+import TodoView from './todo-view';
+import { Route } from 'react-router-dom';  
 
 class TodoApp extends Component {
 
@@ -14,10 +16,12 @@ class TodoApp extends Component {
 
                 <TodoAdder />
                 <TodoList />
+                <Route path="/todo/:id" component={TodoView}/>  
 
                 <hr />
                 <h2>Debug Stuff</h2>
-                <pre>{JSON.stringify(this.props, null, 2)}</pre>  // references new list
+                <p>NONE</p>
+                {/* <pre>{JSON.stringify(this.props, null, 2)}</pre> // references new list */}
             </div>
         );
     }
