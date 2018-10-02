@@ -1,14 +1,14 @@
-const LoadRequest = () => ({       
-    type: '[COUNTER] LoadRequest'  
-});                                
+const LoadRequest = () => ({
+    type: '[COUNTER] LoadRequest'
+});
 
-const LoadSucceeded = () => ({     
+const LoadSucceeded = () => ({
     type: '[COUNTER] LoadSucceeded'
-});                                
+});
 
-const LoadFailed = () => ({        
-    type: '[COUNTER] LoadFailed'   
-});                                
+const LoadFailed = () => ({
+    type: '[COUNTER] LoadFailed'
+});
 
 const Increment = () => ({
     type: '[COUNTER] Increment'
@@ -20,5 +20,8 @@ const Decrement = () => ({
 
 export default {
     Increment,
-    Decrement
+    Decrement,
+    LoadRequest,
+    LoadSucceeded,
+    LoadFailed
 }
